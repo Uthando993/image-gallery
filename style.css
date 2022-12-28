@@ -1,0 +1,76 @@
+*,*:after,*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #0d1017;
+}
+#btn {
+    border-radius: 25px;
+    padding: 15px;
+    border: 5px double #fff;
+    text-align: center;
+    position: fixed;
+    display: block;
+    color: #fff;
+}
+#frame {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: 5px double #fff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+}
+img::-webkit-scrollbar {
+    display: none;
+}
+img {
+    height: 100%;
+    scroll-snap-align: none center;
+    scrollbar-width: none;
+}
+@media screen and (orientation:portrait) {
+    #frame {
+        height: 40%;
+        width: 90%;
+        margin-top: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    #btn {
+        width: 80%;
+        top: 60%;
+        left: 10%;
+        right: 10%;
+    }
+}
+@media screen and (orientation:landscape) {
+    #frame {
+        height: 80%;
+        width: 51%;
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    #btn {
+        width: 30%;
+        top: 40%;
+        left: 65%;
+        right: 20%;
+    }
+}
