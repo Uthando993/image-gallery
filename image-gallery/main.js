@@ -23,7 +23,4 @@ function styling(id) {
     ew = e.clientWidth
     e.style.marginLeft = (fw-ew)/2.0 + "px"
     e.style.marginRight = (fw-ew)/2.0 + "px"
-    e.style.marginTop = (fh-eh)/2.0 + "px"
-    e.style.marginBottom = (fh-eh)/2.0 + "px"
-
 }
