@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Segoe UI;
+    border: none;
 }
 html,body {
     height: 100%;
@@ -35,6 +36,7 @@ body {
     align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center;
+    scrollbar-width: none;
 }
 img::-webkit-scrollbar {
     display: none;
