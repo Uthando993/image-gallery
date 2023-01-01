@@ -33,9 +33,9 @@ body {
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-    align-items: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
     scrollbar-width: none;
 }
 img::-webkit-scrollbar {
